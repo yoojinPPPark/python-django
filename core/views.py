@@ -1,4 +1,4 @@
-from django.shortcuts import render, HttpResponse, JsonResponse, redirect
+from django.shortcuts import render, HttpResponse, redirect
 
 # def index(request):
 # 	return render(request, 'core/index.html')
@@ -6,14 +6,17 @@ from django.shortcuts import render, HttpResponse, JsonResponse, redirect
 def index(request):
     return HttpResponse("http response 테스트")
 
+arr = [1,2,3,4,5]
+
 def test2(request):
-  return JsonResponse("json response 테스트")
+  return HttpResponse(arr)
 
 json = {
   "a": "1",
   "b": "2",
   "c": "3",
+  "d": arr,
 }
 
 def test3(request):
-  return JsonResponse(json)
+  return HttpResponse(json)
