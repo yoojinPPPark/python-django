@@ -66,7 +66,7 @@ MIDDLEWARE = [
 
 CORS_ORIGIN_WHITELIST = ['http://127.0.0.1:3000'
                          ,'http://localhost:3000'
-                         ,'https://web-front-end-advanced-73126l6fzbqt1.gksl1.cloudtype.app:80/']
+                         ,'https://web-front-end-advanced-73126l6fzbqt1.gksl1.cloudtype.app']
 CORS_ALLOW_CREDENTIALS = True
 
 ROOT_URLCONF = 'myapp.urls'
